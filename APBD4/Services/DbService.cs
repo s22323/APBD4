@@ -38,7 +38,7 @@ namespace APBD4.Services
                 con.Open();
                 com.CommandText = "SELECT COUNT(IdAnimal) FROM ANIMAL WHERE idAnimal =@idAnimal";
                 com.Parameters.AddWithValue("@idAnimal", id);
-                return (int)com.ExecuteScalar() == 0;
+                return (int)com.ExecuteScalar() > 0;
             }
         }
 
