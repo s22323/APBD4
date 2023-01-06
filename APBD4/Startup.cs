@@ -19,7 +19,7 @@ namespace APBD4
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Tutorial_4", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "APBD4", Version = "v1" });
             });
         }
 
@@ -30,7 +30,7 @@ namespace APBD4
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Tutorial_4 v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "APBD v1"));
             }
 
             app.UseHttpsRedirection();
